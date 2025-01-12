@@ -144,5 +144,3 @@ Before running the code, you need to create a Twilio account and gather the foll
 
 ---
 
-## License
-This project is open-source and available under the MIT License.
