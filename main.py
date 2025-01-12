@@ -3,8 +3,8 @@ from datetime import datetime, timedelta
 import time
 
 
-acc_id='ACd4eb24b1926c1b3abcc533b14c63cb00'
-aut_id='246900950b4b7ea4e2e8802a265ee2d2'
+acc_id='give your account id from twilio'
+aut_id='give your own aut_id from twilio'
 
 client=Client(acc_id,aut_id)
 
@@ -13,7 +13,7 @@ def send_whatsapp_message(recipient_number, message):
         recipient_number=f"whatsapp:+91{recipient_number}"
         message = client.messages.create(
             body=message,
-            from_='whatsapp:+14155238886',
+            from_='whatsapp:+give the ph number from twilio',
             to=recipient_number
         )
         print(message.sid)
